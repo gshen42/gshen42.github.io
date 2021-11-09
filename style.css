@@ -10,7 +10,7 @@ body {
     max-width: 1000px; /* 45-90 characters */
     margin: auto;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;    /* 15-25 pixel */
+    font-size: 18px;    /* 15-25 pixel */
     font-weight: 400;
     line-height: 1.45em; /* 120-145% of the font size*/
     position: relative;
@@ -39,7 +39,7 @@ aside p {
 }
 
 h1 {
-    font-size: 140%;
+    font-size: 200%;
     font-weight: 700;
     line-height: 1.45em;
     margin-bottom: 0.4em;
@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    font-size: 120%;
+    font-size: 150%;
     font-weight: 600;
     line-height: 1.4em;
     margin-bottom: 0.2em;
@@ -80,6 +80,10 @@ ul, ol {
     list-style-position: inside;
 }
 
+.marker-position-outside {
+    list-style-position: outside;
+}
+
 li::marker {
     color: #800000;
 }
@@ -89,7 +93,7 @@ em {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 code {
@@ -103,4 +107,17 @@ pre {
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 1em;
+}
+
+.social-icon::after {
+    content: none;
+}
+
+.social-icon {
+    font-size: 150%;
+    margin-right: 0.5em;
+}
+
+.social-icon:last-child {
+    margin-right: 0;
 }
