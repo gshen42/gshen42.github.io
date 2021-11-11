@@ -122,3 +122,9 @@ pre {
 .social-icon:last-child {
     margin-right: 0;
 }
+
+.portrait {
+    width: 100px;
+    border-radius: 20%;
+    margin-bottom: 1em;
+}
