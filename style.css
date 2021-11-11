@@ -10,8 +10,8 @@ body {
     max-width: 1000px; /* 45-90 characters */
     margin: auto;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;    /* 15-25 pixel */
-    font-weight: 400;
+    font-size: 18px; /* 15-25 pixel */
+    font-weight: 400; /* normal */
     line-height: 1.45em; /* 120-145% of the font size*/
     position: relative;
     overflow-y: scroll; /* always show vertical scroll bar */
@@ -20,7 +20,7 @@ body {
 main {
     width: 700px;
     margin-left: 300px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 aside {
@@ -34,23 +34,23 @@ aside {
 aside p {
     font-size: 90%;
     font-style: italic;
-    font-weight: 300;
-    line-height: 1.3em;
+    font-weight: 300; /* light */
+    line-height: 1.35em;
 }
 
 h1 {
-    font-size: 200%;
-    font-weight: 700;
-    line-height: 1.45em;
+    font-size: 160%;
+    font-weight: 700; /* bold */
+    line-height: 1.65em;
     margin-bottom: 0.4em;
     padding-top: 0.2em;
     border-top: solid 3px #800000;
 }
 
 h2 {
-    font-size: 150%;
-    font-weight: 600;
-    line-height: 1.4em;
+    font-size: 130%;
+    font-weight: 600; /* semi-bold */
+    line-height: 1.55em;
     margin-bottom: 0.2em;
 }
 
@@ -114,7 +114,8 @@ pre {
 }
 
 .social-icon {
-    font-size: 150%;
+    font-size: 130%;
+    font-weight: 600; /* semi-bold */
     margin-right: 0.5em;
 }
 
