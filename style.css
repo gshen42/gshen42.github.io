@@ -125,7 +125,7 @@ pre {
 }
 
 .portrait {
-    width: 100px;
-    border-radius: 20%;
+    width: 150px;
+/*  border-radius: 10%; */
     margin-bottom: 1em;
 }
