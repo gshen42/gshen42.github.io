@@ -126,6 +126,6 @@ pre {
 
 .portrait {
     width: 150px;
-/*  border-radius: 10%; */
+    border-radius: 10%;
     margin-bottom: 1em;
 }
