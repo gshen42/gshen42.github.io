@@ -1,7 +1,2 @@
-# Emacs backup files
-*~
-
-# LaTeX related files
-*.aux
-*.log
-*.out
+.DS_Store
+.vscode
