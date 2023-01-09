@@ -1,0 +1,78 @@
+@import url(./normalize.css);
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+    font-family: 'Mona Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    max-width: 50rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.5rem;
+    color: #1f0800;
+    background-color: #fcfcf7;
+}
+
+nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 90%;
+    font-weight: 300;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 0.1rem #800000;
+}
+
+nav a.active {
+    font-weight: 600;
+    background: none;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background: rgba(251, 202, 174, 0.5);
+}
+
+a:hover {
+    text-decoration: none;
+    background: #fdc7ac;
+    transition: background 0.2s;
+}
+
+li::marker {
+    color: #800000;
+}
+
+code {
+    color: #800000;
+}
+
+table.notes-list {
+    width: 80%;
+    margin: auto;
+}
+
+table.notes-list td.date {
+    text-align: right;
+}
