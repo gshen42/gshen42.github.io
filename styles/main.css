@@ -1,22 +1,13 @@
 @import url(./normalize.css);
 
-@font-face {
-    font-family: 'Mona Sans';
-    src:
-        url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-        url('/fonts/Mona-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-}
-
 html {
-    font-family: 'Mona Sans';
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
 
 body {
-    max-width: 50rem;
+    max-width: 40rem;
     margin: auto;
     margin-bottom: 4rem;
     padding-left: 1rem;
