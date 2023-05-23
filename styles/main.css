@@ -2,7 +2,7 @@
 
 html {
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -12,7 +12,7 @@ body {
     margin-bottom: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     color: #1f0800;
     background-color: #fcfcf7;
 }
