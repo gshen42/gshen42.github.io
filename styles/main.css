@@ -17,24 +17,6 @@ body {
     background-color: #fcfcf7;
 }
 
-nav {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 90%;
-    font-weight: 300;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    column-gap: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: solid 0.1rem #800000;
-}
-
-nav a.active {
-    font-weight: 600;
-    background: none;
-}
-
 section {
     margin-bottom: 2rem;
 }
@@ -53,17 +35,4 @@ a:hover {
 
 li::marker {
     color: #800000;
-}
-
-code {
-    color: #800000;
-}
-
-table.notes-list {
-    width: 80%;
-    margin: auto;
-}
-
-table.notes-list td.date {
-    text-align: right;
 }
