@@ -9,7 +9,8 @@ html {
 body {
     max-width: 40rem;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
     padding-left: 1rem;
     padding-right: 1rem;
     line-height: 1.3rem;
@@ -35,4 +36,24 @@ a:hover {
 
 li::marker {
     color: #800000;
+}
+
+#name-tag {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+#name-tag-pic {
+}
+
+#portrait {
+    width: 10rem;
+}
+
+#name-tag-info {
+    display: flex;
+    flex-direction: column;
 }
