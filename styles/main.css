@@ -1,7 +1,9 @@
 @import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 html {
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    /* use modern font stacks (humanist) as fallbacks: https://modernfontstacks.com */
+    font-family: Lato, Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
