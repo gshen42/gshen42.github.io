@@ -45,6 +45,7 @@ li::marker {
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 4rem;
 }
 
