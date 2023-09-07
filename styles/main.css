@@ -26,18 +26,11 @@ section {
 
 a {
     text-decoration: none;
-    color: inherit;
-    background: rgba(251, 202, 174, 0.5);
+    color: #0076ba;
 }
 
 a:hover {
-    text-decoration: none;
-    background: #fdc7ac;
-    transition: background 0.2s;
-}
-
-li::marker {
-    color: #800000;
+    text-decoration: underline;
 }
 
 #name-tag {
