@@ -1,11 +1,22 @@
 @import url(./normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
 html {
-    /* use modern font stacks (Rounded Sans) as fallbacks: https://modernfontstacks.com */
-    font-family: 'Nunito', ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    /* Humanist from Modern Font Stacks (https://modernfontstacks.com) */
+    font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+        source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 415px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -15,9 +26,7 @@ body {
     margin-bottom: 8rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    line-height: 1.3rem;
-    color: #1f0800;
-    background-color: #fcfcf7;
+    line-height: 1.5rem;
 }
 
 section {
@@ -33,23 +42,8 @@ a:hover {
     text-decoration: underline;
 }
 
-#name-tag {
-    padding-left: 1rem;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 4rem;
-}
-
-#name-tag-pic {
-}
-
 #portrait {
-    width: 15rem;
-}
-
-#name-tag-info {
-    display: flex;
-    flex-direction: column;
+    width: 9rem;
+    border-radius: 50%;
+    float: right;
 }

@@ -9,33 +9,25 @@
 </head>
 
 <body>
-    <section id="name-tag">
-        <div id="name-tag-pic">
-            <img src="/assets/pic.jpg" alt="A picture of me" id="portrait">
-        </div>
-        <div id="name-tag-info">
-            <h1>Gan Shen</h1>
-            <div>Email: gshen42@ucsc.edu</div>
-            <div>
-                <a href="https://github.com/gshen42">GitHub</a> |
-                <a rel="me" href="https://mathstodon.xyz/@ganshen">Mastodon</a> |
-                <a href="https://orcid.org/0009-0006-0947-9531">ORCID</a>
-            </div>
-        </div>
+    <section>
+        <img src="/assets/pic.jpg" alt="A picture of me" id="portrait">
+        <h1>Gan Shen</span></h1>
+        <div>Email: gshen42@ucsc.edu</div>
+        <div><a href="https://scholar.google.com/citations?user=IwUDGN4AAAAJ&hl=en">Google Scholar</a ></div>
+        <div><a rel="me" href="https://mathstodon.xyz/@ganshen">Mastodon</a></div>
+        <div><a href="https://github.com/gshen42">GitHub</a></div>
     </section>
     <section>
         <h2>About</h2>
         <p>
-            Hi👋, I'm a PhD student at the <a href="https://www.ucsc.edu/about/">University of California, Santa Cruz</a>, advised by <a href="https://users.soe.ucsc.edu/~lkuper/">Lindsey Kuper</a> in the <a href="https://lsd.ucsc.edu">LSD lab</a>.
+            Hi, I'm a 5th-year PhD candidate in Computer Science from <a href="https://www.ucsc.edu/about/">University of California, Santa Cruz</a>.
+            I'm advised by <a href="https://users.soe.ucsc.edu/~lkuper/">Prof. Lindsey Kuper</a> and a member of the <a href="https://lsd.ucsc.edu">LSD lab</a>.
+            My research lies in programming languages, with a focus on their applications in building software that is elegant, correct, and efficient (in this order!).
         </p>
         <p>
-            I do research on <strong>programming languages</strong>, with a focus on their applications in building distributed systems that are elegant, correct, and efficient (in this order!).
-        </p>
-        <p>
-
-            More specifically, I work on <strong>choreographic programming</strong>, a programming paradigm where one writes a single program that describes the complete behavior of a distributed system and then compiles it to individual programs that run on each node.
-            In this way, the generated programs are guaranteed to be deadlock-free.
-            See <a href="https://github.com/gshen42/HasChor">HasChor</a>, our implementation of choreographic programming in Haskell, for more details.
+            Specifically, I work on <a href="https://en.wikipedia.org/wiki/Choreographic_programming">choreographic programming</a >, a programming paradigm that allows one to write a single program that describes the complete behavior of a distributed system and then compiles it to individual programs run on each node.
+            In this way, interactions between nodes are manifest and guaranteed deadlock-free, an essential step toward understandable and reliable distributed systems.
+            We've been developing <a href="https://github.com/gshen42/HasChor">HasChor</a>, a Haskell library for choreographic programming, to experiment with language design and create real-world distributed systems.
         </p>
         <p>
             I did two internships in the <a href="https://aws.amazon.com/security/provable-security/">Automated Reasoning Group</a> at <a href="https://aws.amazon.com">Amazon Web Service</a> in the summer of 2022 and 2023, where I worked on modeling and verifying distributed protocols.
