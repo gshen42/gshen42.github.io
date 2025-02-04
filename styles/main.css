@@ -1,0 +1,49 @@
+@import url(./normalize.css);
+
+html {
+    /* Humanist from Modern Font Stacks (https://modernfontstacks.com) */
+    font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+        source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 415px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    max-width: 40rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #2fafff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#portrait {
+    width: 9rem;
+    border-radius: 50%;
+    float: right;
+}
