@@ -1,9 +1,8 @@
 @import url(./normalize.css);
 
 html {
-    /* Humanist from Modern Font Stacks (https://modernfontstacks.com) */
-    font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
-        source-sans-pro, sans-serif;
+    /* Geometric Humanist from Modern Font Stacks (https://modernfontstacks.com) */
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: normal;
 }
 
