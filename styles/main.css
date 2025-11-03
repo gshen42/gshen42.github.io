@@ -1,8 +1,9 @@
 @import url(./normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 html {
-    /* Geometric Humanist from Modern Font Stacks (https://modernfontstacks.com) */
-    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-weight: normal;
 }
 
