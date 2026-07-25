@@ -1,0 +1,26 @@
+{
+  "name": "gshen42.github.io",
+  "version": "1.0.0",
+  "description": "Run locally with `python3 -m http.server`",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gshen42/gshen42.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gshen42/gshen42.github.io/issues"
+  },
+  "homepage": "https://github.com/gshen42/gshen42.github.io#readme",
+  "dependencies": {
+    "astro": "^7.1.3"
+  }
+}
