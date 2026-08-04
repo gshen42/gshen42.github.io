@@ -1,0 +1,108 @@
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+
+interface Props {
+    current: "home" | "writings" | "academic" | "personal";
+}
+
+const { current } = Astro.props;
+---
+
+<nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-identity">
+        <a class="site-name" href="/">Gan Shen</a>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a
+                href="/writings/"
+                aria-current={current === "writings" ? "page" : undefined}
+            >
+                Writings
+            </a>
+        </li>
+        <li>
+            <a
+                href="/academic/"
+                aria-current={current === "academic" ? "page" : undefined}
+            >
+                Academic
+            </a>
+        </li>
+        <li>
+            <a
+                href="/personal/"
+                aria-current={current === "personal" ? "page" : undefined}
+            >
+                Personal
+            </a>
+        </li>
+        <li class="theme-switcher">
+            <ThemeSwitcher />
+        </li>
+    </ul>
+</nav>
+
+<style>
+    .site-nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .site-nav a {
+        color: var(--tx);
+        text-decoration: none;
+    }
+
+    .site-nav a:after {
+        content: "";
+    }
+
+    .site-nav a:hover {
+        color: var(--cyan);
+        text-decoration: none;
+    }
+
+    .site-name {
+        font-size: 1.2rem;
+    }
+
+    .site-identity {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+
+    .theme-switcher {
+        display: flex;
+    }
+
+    @media screen and (max-width: 415px) {
+        .site-nav {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        h1 {
+            margin-bottom: 0.35rem;
+        }
+    }
+</style>

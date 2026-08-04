@@ -1,0 +1,128 @@
+/* Color Palette */
+/* Inspired by Flexoki (https://stephango.com/flexoki) */
+
+:root {
+    color-scheme: light dark;
+
+    /* Base colors */
+    --black: #100f0f;
+    --paper: #fffcf0;
+
+    --base-50: #f2f0e5;
+    --base-100: #e6e4d9;
+    --base-150: #dad8ce;
+    --base-200: #cecdc3;
+    --base-300: #b7b5ac;
+    --base-400: #9f9d96;
+    --base-500: #878580;
+    --base-600: #6f6e69;
+    --base-700: #575653;
+    --base-800: #403e3c;
+    --base-850: #343331;
+    --base-900: #282726;
+    --base-950: #1c1b1a;
+
+    --red-600: #af3029;
+    --orange-600: #bc5215;
+    --yellow-600: #ad8301;
+    --green-600: #66800b;
+    --cyan-600: #24837b;
+    --blue-600: #205ea6;
+    --purple-600: #5e409d;
+    --magenta-600: #a02f6f;
+
+    --red-400: #d14d41;
+    --orange-400: #da702c;
+    --yellow-400: #d0a215;
+    --green-400: #879a39;
+    --cyan-400: #3aa99f;
+    --blue-400: #4385be;
+    --purple-400: #8b7ec8;
+    --magenta-400: #ce5d97;
+
+    /* Semantics colors for the light theme */
+
+    --bg: var(--paper);
+    --bg-2: var(--base-50);
+    --ui: var(--base-100);
+    --ui-2: var(--base-150);
+    --ui-3: var(--base-200);
+    --tx: var(--black);
+    --tx-2: var(--base-600);
+    --tx-3: var(--base-300);
+
+    --red: var(--red-600);
+    --orange: var(--orange-600);
+    --yellow: var(--yellow-600);
+    --green: var(--green-600);
+    --cyan: var(--cyan-600);
+    --blue: var(--blue-600);
+    --purple: var(--purple-600);
+    --magenta: var(--magenta-600);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: var(--black);
+        --bg-2: var(--base-950);
+        --ui: var(--base-900);
+        --ui-2: var(--base-850);
+        --ui-3: var(--base-800);
+        --tx: var(--base-200);
+        --tx-2: var(--base-500);
+        --tx-3: var(--base-700);
+
+        --red: var(--red-400);
+        --orange: var(--orange-400);
+        --yellow: var(--yellow-400);
+        --green: var(--green-400);
+        --cyan: var(--cyan-400);
+        --blue: var(--blue-400);
+        --purple: var(--purple-400);
+        --magenta: var(--magenta-400);
+    }
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --bg: var(--paper);
+    --bg-2: var(--base-50);
+    --ui: var(--base-100);
+    --ui-2: var(--base-150);
+    --ui-3: var(--base-200);
+    --tx: var(--black);
+    --tx-2: var(--base-600);
+    --tx-3: var(--base-300);
+
+    --red: var(--red-600);
+    --orange: var(--orange-600);
+    --yellow: var(--yellow-600);
+    --green: var(--green-600);
+    --cyan: var(--cyan-600);
+    --blue: var(--blue-600);
+    --purple: var(--purple-600);
+    --magenta: var(--magenta-600);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --bg: var(--black);
+    --bg-2: var(--base-950);
+    --ui: var(--base-900);
+    --ui-2: var(--base-850);
+    --ui-3: var(--base-800);
+    --tx: var(--base-200);
+    --tx-2: var(--base-500);
+    --tx-3: var(--base-700);
+
+    --red: var(--red-400);
+    --orange: var(--orange-400);
+    --yellow: var(--yellow-400);
+    --green: var(--green-400);
+    --cyan: var(--cyan-400);
+    --blue: var(--blue-400);
+    --purple: var(--purple-400);
+    --magenta: var(--magenta-400);
+}

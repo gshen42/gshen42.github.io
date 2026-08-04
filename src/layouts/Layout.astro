@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+    title: string;
+    current: "home" | "writings" | "academic" | "personal";
+}
+
+const { title, current } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-US">
+    <Head title={title} />
+
+    <body>
+        <Nav current={current} />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>
+
+<style></style>
