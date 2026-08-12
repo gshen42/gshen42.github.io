@@ -1,7 +1,62 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+
+const writings = (
+    await getCollection("writings", ({ data }) => !data.draft)
+).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+
+const formatDate = (date: Date) =>
+    date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "UTC",
+    });
 ---
 
 <Layout title="Writings — Gan Shen" current="writings">
-    <p>To be added 🥹</p>
+    <h1>Writings</h1>
+    <ul class="writing-list">
+        {
+            writings.map((writing) => (
+                <li>
+                    <a href={`/writings/${writing.id}/`}>
+                        {writing.data.title}
+                    </a>
+                    <time datetime={writing.data.published.toISOString()}>
+                        {formatDate(writing.data.published)}
+                    </time>
+                    <p>{writing.data.description}</p>
+                </li>
+            ))
+        }
+    </ul>
 </Layout>
+
+<style>
+    .writing-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .writing-list li {
+        margin-bottom: 2rem;
+    }
+
+    .writing-list a {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .writing-list time {
+        display: block;
+        color: var(--tx-2);
+        font-size: 0.9rem;
+    }
+
+    .writing-list p {
+        margin-top: 0.35rem;
+    }
+</style>

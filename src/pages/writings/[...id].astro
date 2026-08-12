@@ -1,0 +1,67 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const writings = await getCollection("writings");
+
+    return writings.map((writing) => ({
+        params: { id: writing.id },
+        props: { writing },
+    }));
+}
+
+interface Props {
+    writing: CollectionEntry<"writings">;
+}
+
+const { writing } = Astro.props;
+const { Content } = await render(writing);
+const published = writing.data.published.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+});
+---
+
+<Layout title={`${writing.data.title} — Gan Shen`} current="writings">
+    <article>
+        <header>
+            <h1>{writing.data.title}</h1>
+            <time datetime={writing.data.published.toISOString()}
+                >{published}</time
+            >
+        </header>
+        <Content />
+    </article>
+</Layout>
+
+<style>
+    article header {
+        margin-bottom: 3rem;
+    }
+
+    article header h1 {
+        margin-bottom: 0.35rem;
+    }
+
+    article header time {
+        color: var(--tx-2);
+        font-size: 0.9rem;
+    }
+
+    article :global(blockquote) {
+        margin-left: 0;
+        padding-left: 1rem;
+        border-left: 3px solid var(--ui-3);
+        color: var(--tx-2);
+    }
+
+    article :global(code) {
+        padding: 0.1rem 0.25rem;
+        border-radius: 4px;
+        background: var(--bg-2);
+    }
+</style>
