@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/gshen42/gshen42.github.io#readme",
   "dependencies": {
-    "astro": "^7.1.3"
+    "astro": "^7.2.0"
   }
 }
