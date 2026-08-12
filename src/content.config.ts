@@ -4,7 +4,7 @@ import { z } from "astro/zod";
 
 const writings = defineCollection({
   loader: glob({
-    base: "./src/content/writings",
+    base: "./writings",
     pattern: "**/*.md",
   }),
   schema: z.object({
