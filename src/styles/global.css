@@ -15,17 +15,24 @@
 }
 
 body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg);
     color: var(--tx);
     margin: auto;
     padding: 4rem 1.5rem 4rem;
     max-width: 45rem;
-    min-height: 80vh;
+    min-height: 100vh;
     font-size: 18px;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-optical-sizing: auto;
     line-height: 1.5rem;
+}
+
+main {
+    flex: 1;
 }
 
 a {
