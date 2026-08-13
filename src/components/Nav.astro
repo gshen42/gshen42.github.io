@@ -1,108 +1,65 @@
 ---
 import ThemeSwitcher from "./ThemeSwitcher.astro";
-
-interface Props {
-    current: "home" | "writings" | "academic" | "personal";
-}
-
-const { current } = Astro.props;
 ---
 
-<nav class="site-nav" aria-label="Primary navigation">
-    <div class="site-identity">
-        <a class="site-name" href="/">Gan Shen</a>
-    </div>
-    <ul class="nav-links">
+<nav>
+    <a class="site-name" href="/">Gan Shen</a>
+    <ul>
         <li>
-            <a
-                href="/writings/"
-                aria-current={current === "writings" ? "page" : undefined}
-            >
-                Writings
-            </a>
+            <a href="/writings/"> Writings </a>
         </li>
         <li>
-            <a
-                href="/academic/"
-                aria-current={current === "academic" ? "page" : undefined}
-            >
-                Academic
-            </a>
+            <a href="/academic/"> Academic </a>
         </li>
         <li>
-            <a
-                href="/personal/"
-                aria-current={current === "personal" ? "page" : undefined}
-            >
-                Personal
-            </a>
+            <a href="/personal/"> Personal </a>
         </li>
-        <li class="theme-switcher">
+        <li>
             <ThemeSwitcher />
         </li>
     </ul>
 </nav>
 
 <style>
-    .site-nav {
+    nav {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        gap: 1.5rem;
+        gap: 1rem;
         margin-bottom: 6rem;
+        white-space: nowrap;
     }
 
-    .site-nav a {
-        color: var(--tx);
+    nav a {
         text-decoration: none;
     }
 
-    .site-nav a:after {
+    nav a:after {
         content: "";
     }
 
-    .site-nav a:hover {
+    nav a:hover {
         color: var(--cyan);
         text-decoration: none;
     }
 
-    .site-name {
-        font-size: 1.2rem;
-    }
-
-    .site-identity {
-        display: flex;
-        align-items: baseline;
-        gap: 0.5rem;
-        white-space: nowrap;
-    }
-
-    .nav-links {
+    ul {
         display: flex;
         align-items: center;
-        gap: 1.25rem;
+        gap: 1rem;
         margin: 0;
         padding: 0;
         list-style: none;
     }
 
-    .nav-links a {
-        white-space: nowrap;
+    li {
+        font-size: 0.9rem;
     }
 
-    .theme-switcher {
-        display: flex;
-    }
-
-    @media screen and (max-width: 415px) {
-        .site-nav {
-            align-items: flex-start;
+    @media screen and (max-width: 520px) {
+        nav {
             flex-direction: column;
-            gap: 0;
-        }
-
-        h1 {
-            margin-bottom: 0.35rem;
+            gap: 0rem;
         }
     }
 </style>
