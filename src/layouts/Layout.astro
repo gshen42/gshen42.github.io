@@ -7,10 +7,9 @@ import Footer from "../components/Footer.astro";
 
 interface Props {
     title: string;
-    current: "home" | "writings" | "academic" | "personal";
 }
 
-const { title, current } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,7 +17,7 @@ const { title, current } = Astro.props;
     <Head title={title} />
 
     <body>
-        <Nav current={current} />
+        <Nav />
         <main>
             <slot />
         </main>
